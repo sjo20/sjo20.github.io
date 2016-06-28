@@ -7,7 +7,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
+		<!--<li>{{ site.title }}</li>-->
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
@@ -28,14 +28,15 @@
 --> 
        </ul>
       </div>
-<!--
+
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+	      <!--<p>{{ site.description }}</p>-->
+
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
       </div>
--->
+
     </div>
 
-    <span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
 
   </div>
 
